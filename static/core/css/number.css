@@ -1,0 +1,70 @@
+	#passwordresetwrapper{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		height:100%;
+		width:100%;
+	}
+	.passwordchangeform{
+		display:flex;
+		flex-direction: column;
+	}
+	.helptext{
+		display:none;
+	}
+	form{
+		display:flex;
+		min-width:300px;
+		flex-direction: column;
+	}
+	#id_new_password2{
+		margin-bottom:20px;
+		margin-top:10px;
+	}
+
+	#id_new_password1{
+		margin-top:10px;
+
+	}
+
+	#id_old_password{
+		margin-top:10px;
+	}
+	#pwformwrapper{
+		position: relative;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		height:500px;
+		width:500px;
+		border:1px solid #CDCDCD;
+		min-width: 400px;
+		border-radius:5px;
+	}
+	#passwordheader{
+		position: absolute;
+		left:15;
+		top:20;
+	}
+	.errorlist{
+		display: none;
+	}
+	#updatepw{
+		height: 40px;
+		background: blue;
+		border-radius: 5px;
+		border:0;
+		color:white;
+		margin-top:20px;
+	}
+	.pwchangeinput{
+		padding:5px;
+	}
+	#passwordheaderspan{
+		margin-left:10px;
+	}
+	label{
+		margin-top:10px;
+		margin-bottom:10px;
+
+	}

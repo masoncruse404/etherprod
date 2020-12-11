@@ -1,0 +1,35 @@
+{% load static %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel='stylesheet' href='{% static 'core/css/login.css' %}'>
+<link rel='stylesheet' href='{% static 'core/css/alerts.css' %}'>
+ {% include 'includes/warninglogin.html' %}
+
+<div class='lnwrapper' id='ln'>
+    <div class='lnmargin'>
+    <div class='lnlogo'>
+        <img class='lnglogo' src='{% static 'images/ether-logo.png' %}'>
+    </div>
+    <div class='lntitle'>
+        <span>Sign in</span>
+    </div>
+    <div class='lnsub'>
+        <span>Use your Ether Account</span>
+    </div> <div class='lnuser'>
+    <label id='emlabel' class='lnemaillabel'>Email or phone</label>
+    <div id='lgemail'>{{ form.email }}</div>
+    </div>
+    <a class='lnfe' href='/reset_password'>Forgot email?</a>
+    <div class='lnsug'>
+        <span>Not your computer? Use Guest mode to sign in privately.</span>
+    </div>
+    <a href='#' class='lnlm'>Learn more</a>
+    <div class='lnbtnwrapper'>
+    <a href='/users/createaccount' class='lnca'>Create account</a>
+    <div class='lnbtnw'>
+    <button id='usernamecheck' class='lnbtn'>Next</button>
+    </div>
+    </div>
+    </div>
+</div>
+<script src='{% static 'core/js/login.js' %}'></script>

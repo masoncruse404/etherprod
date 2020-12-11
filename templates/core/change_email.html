@@ -1,0 +1,73 @@
+{% extends 'html/base.html' %}
+
+
+
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static "ether/css/folders.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/qafilecontainer.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/flexboxgrid.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/fileupload.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/movetopopupstyle.css" %}">
+<link rel="stylesheet" href="{% static "core/css/email.css" %}">
+
+    
+
+  
+
+
+{% endblock %}
+{% block javascript %}
+
+<script src="{% static 'ether/js/bbase.js' %}"></script>
+<script src="{% static 'ether/js/movetopopup.js' %}"></script>
+
+
+
+
+
+
+
+{% endblock %}
+{% block content %}
+<style>
+
+</style>
+
+<div id="passwordresetwrapper">
+
+<div id="pwformwrapper">
+<div id="passwordheader"><a href="/users/account/"><span><i class="fas fa-chevron-left"></i></span></a><span id="passwordheaderspan">Email Update</span></div>
+<form method="POST">
+  {% csrf_token %}
+    <label for="#id_old_password">Email</label>
+
+	<input type="text" class="pwchangeinput" name='qemail'>
+   
+
+  <button id="updatepw" type="submit">Save changes</button>
+</form>
+</div>
+</div>
+<div id="passwordresetwrapper">
+
+</div>
+
+{% endblock %}
+
+{% include 'includes/fileupload/fileupload.html' %}      
+
+ {% include 'includes/filecontextfolder.html' %}
+
+{% block js %}
+
+<script src="{% static "ether/js/bbase.js" %}"></script>
+<script src="{% static "ether/js/fileupload.js" %}"></script>
+<script src="{% static "ether/js/fileupload.js" %}"></script>
+<script src="{% static "ether/js/movetopopup.js" %}"></script>
+<script src="{% static "ether/js/showimages.js" %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{% static "core/js/browsercheckpw.js" %}"></script>
+
+{% endblock %}
+  

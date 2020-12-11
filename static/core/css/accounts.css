@@ -1,0 +1,188 @@
+#accountwrapper{
+		
+		margin-bottom:25px;
+		width:800px
+		height:800px;
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	#accountinfowrapper{
+		
+		display: flex;
+		flex-direction: column;
+		margin-bottom:35px;
+		margin-top:35px;
+
+	}
+	#personalinfospan{
+		font-size:37.5px;
+		text-align: center;
+		margin-bottom:10px;
+		text-shadow: 2px 2px 4px rgba(0,0,0,.29);
+	}
+	#pinfosubspan{
+		color:grey;
+		font-size:18px;
+	}
+
+	#profilewrapper{
+		border:1px solid #CDCDCD;
+		border-radius:5px;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+	}
+
+	#contactwrapper{
+	    box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+		margin-top:30px;
+		margin-top:60px;
+		border:1px solid #CDCDCD;
+		border-radius:5px;
+	}
+	#profileandaccountwrapper{
+		width:800px;
+	}
+	#profileheaderwrapper{
+		display: flex;
+		flex-direction:column;
+	}
+
+	.namelink{
+		display:flex;
+	}
+
+	#profileheaderwrapper > span{
+	}
+	
+	#passwordheaderspan{
+		margin-left:10px;
+	}
+
+	#namewrapper{
+		display:flex;
+		border-bottom:1px solid rgba(0,0,0,.2);
+		width:100%;
+
+	}
+	#unamecontainer span{
+		font-size:16px;
+		margin-left:20px;
+	}
+	#namewrapperb{
+		display:flex;
+		padding-top:10px;
+		padding-bottom:10px;
+		overflow: hidden;
+
+	}
+	#namecontainer{
+		font-family: 'arial';
+		width:100px;
+		color:rgba(0,0,0,.8);
+		font-size:13px;
+		text-transform: uppercase;
+		font-weight:500;
+	}
+	#unamecontainer{
+		overflow: hidden;
+		color:black;
+	}
+
+	#profileh{
+		font-size:25px;
+		color:black;
+		padding:25px 0;
+
+	}
+
+	#profilehb{
+		font-size:25px;
+		color:black;
+		padding:15px 0;
+
+	}
+	#proinfo{
+		color:grey;
+		font-size:18px;
+		margin-bottom:10px;
+	}
+	.grey{
+		color:grey;
+	}
+	.bold{
+		-webkit-text-stroke:.324px;
+	}
+	#prolearn{
+		color:blue;
+	}
+	.namelink:hover{
+		background-color:#F0F0F0;
+	}
+
+	#unamecontainer{
+		margin-left:10px;
+	}
+	#namewrapper{
+		
+		padding-top:15;
+		padding-bottom:15;
+	}
+	.m10{
+		margin-left:20px;
+	}
+	#profileheaderwrapper{
+		margin-left:20px;
+		padding:10px 0;
+	}
+	@media(max-width:1100px){
+		#profileandaccountwrapper{
+			width:500px;
+
+		}
+		#pinfosubspan{
+			font-size: 14.5px;
+		}
+
+	}
+
+		@media(max-width:900px){
+		#profileandaccountwrapper{
+			width:300px;
+
+		}
+		#pinfosubspan{
+			font-size: 13.5px;
+		}
+		#accountwrapper{
+			margin-top:30px;
+		 }
+		 #unamecontainer span{
+		 	font-size:11px;
+		 }
+	}
+
+
+	@media(max-width:600px){
+		#profileandaccountwrapper{
+			width:180px;
+			margin-left:20px;
+			margin-right:20px;
+		}
+		#profileheaderwrapper > span{
+			font-size:.7em;
+		}
+		.nav{
+			width:200px;
+		}
+		.page{
+			  grid-template-columns: 200px auto;
+
+		}
+		.nav-logo-wrapper{
+			width:256px;
+		}
+		#accountinfowrapper{
+			display: none;
+		}
+	}

@@ -1,0 +1,107 @@
+{% extends 'html/base.html' %}
+
+
+
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static "ether/css/folders.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/qafilecontainer.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/flexboxgrid.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/fileupload.css" %}">
+<link rel="stylesheet" href="{% static "ether/css/movetopopupstyle.css" %}">
+<link rel="stylesheet" href="{% static "core/css/accounts.css" %}">
+
+    
+
+  
+
+
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'ether/js/bbase.js' %}"></script>
+<script src="{% static 'ether/js/movetopopup.js' %}"></script>
+
+
+
+
+
+
+
+{% endblock %}
+{% block content %}
+<style>
+	
+</style>
+<div id="accountwrapper">
+	<div id="accountinfowrapper">
+		<span id="personalinfospan">Personal info</span>
+		<span id="pinfosubspan">Basic info, like your name and photo, that you use on Ether services</span>
+	</div>
+
+	<div id="profileandaccountwrapper">
+	<div id="profilewrapper">
+		<div id="profileheaderwrapper">
+			<span id="profileh" class="bold">Profile</span>
+			<span id="proinfo">Some info may be visible to other people using Ether services. <a id="prolearn" href="#">Learn more</a></span>
+		</div>
+		<a class="namelink" href="#">
+		<div id="namewrapper">
+			<div id="namecontainer"><span class="m10 bold">Photo</span></div>
+			<div id="unamecontainer"><span>Add a photo to personalize your account</span></div>
+		</div>
+		</a>
+		<a class="namelink" href="/users/changename">
+		<div id="namewrapper">
+			<div id="namecontainer"><span class="m10 bold">Name</span></div>
+			<div id="unamecontainer"><span>{{name}}</span></div>
+			
+		</div>
+   		</a>
+   		<a class="namelink" href="/users/password">
+		<div id="namewrapperb">
+			<div id="namecontainer"><span class="m10 bold">Password</span></div>
+			<div id="unamecontainer"><span>**********</span></div>	
+		</div>
+		</a>
+
+
+	</div>
+
+
+	<div id="contactwrapper">
+		<div id="profileheaderwrapper">
+			<span id="profilehb" class="bold">Contact Info</span>
+		</div>
+
+		<a class="namelink" href="/users/email">
+		<div id="namewrapperb">
+			<div id="namecontainer"><span class="m10 bold">EMAIL</span></div>
+			<div id="unamecontainer"><span class="m10">{{email}}</span></div>
+		</div>
+		</a>
+	
+
+
+	</div>
+	</div>
+
+</div>
+
+{% endblock %}
+
+{% include 'includes/fileupload/fileupload.html' %}      
+
+ {% include 'includes/filecontextfolder.html' %}
+
+{% block js %}
+
+<script src="{% static "ether/js/bbase.js" %}"></script>
+<script src="{% static "ether/js/fileupload.js" %}"></script>
+<script src="{% static "ether/js/fileupload.js" %}"></script>
+<script src="{% static "ether/js/movetopopup.js" %}"></script>
+<script src="{% static "ether/js/showimages.js" %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{% static "core/js/browsercheckpw.js" %}"></script>
+
+{% endblock %}
+  

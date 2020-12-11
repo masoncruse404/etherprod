@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static "core/css/register-mountain.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/alerts.css" %}">
+</head>
+<body>
+	{% if alert %}
+ 	{% include 'includes/warning.html' %}
+	{% endif %}
+<div class='logo'>Ether</div>
+<div class="wrapper">
+
+<div class="inputWrapper">
+   <div class="registerheader">
+   <span>Create an account</span>
+</div>
+<form method="post">
+{% csrf_token %}
+<div class="inputContainer">
+<i class="fa fa-user icon"> </i>
+{{ form.first_name }}
+</div>
+<div class="inputContainer">
+<i class="fas fa-user-friends icon"></i>{{ form.last_name }}
+</div>
+<div class="inputContainer">
+<i class="fa fa-envelope icon"> </i>
+{{ form.email }}
+</div>
+<div class="inputContainer">
+<i class="fa fa-key icon"> </i>
+{{ form.password }}
+</div>
+<div classs="inputBtnContainer" onclick="this.form.submit();">
+   <button class="createAccountBtn"><span class="penone">Create Account</span></button>
+</div>
+<a class='inputAccountContainer' href="/"><span >Already have an account?</span></a>
+</form>
+</div>
+</div>
+</body>
+</html>
